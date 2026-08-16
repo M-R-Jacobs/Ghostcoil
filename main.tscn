@@ -31,6 +31,6 @@ shape = SubResource("CapsuleShape3D_pjt8s")
 [node name="Camera" type="Camera3D" parent="Player" unique_id=1648684219]
 transform = Transform3D(1, 0, 0, 0, 0.57357645, 0.81915206, 0, -0.81915206, 0.57357645, 0, 8, 6)
 
-[node name="blockbench_export" parent="Player" unique_id=407041438 instance=ExtResource("2_0xm2m")]
+[node name="PC" parent="Player" unique_id=407041438 instance=ExtResource("2_0xm2m")]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1051493653]
