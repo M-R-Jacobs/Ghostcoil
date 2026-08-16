@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://djtvevr0v3v38"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_pjt8s"]
+size = Vector2(20, 20)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_pjt8s"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_pjt8s"]
+
+[node name="Main" type="Node3D" unique_id=96248778]
+
+[node name="Ground" type="MeshInstance3D" parent="." unique_id=981068793]
+mesh = SubResource("PlaneMesh_pjt8s")
+
+[node name="Player" type="CharacterBody3D" parent="." unique_id=918018658]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1601230364]
+shape = SubResource("CapsuleShape3D_pjt8s")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=1030047228]
+mesh = SubResource("CapsuleMesh_pjt8s")
+
+[node name="Camera" type="Camera3D" parent="Player" unique_id=1648684219]
+transform = Transform3D(1, 0, 0, 0, 0.57357645, 0.81915206, 0, -0.81915206, 0.57357645, 0, 8, 6)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1051493653]
